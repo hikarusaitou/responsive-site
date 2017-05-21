@@ -1,0 +1,130 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+/* Base
+------------------------------------------------------------*/
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;
+  background-color: #fdfcf6; }
+
+a {
+  color: #66b7ec;
+  text-decoration: none; }
+  a:visited {
+    color: #39a2e6; }
+  a:hover {
+    color: #39a2e6; }
+  a:active {
+    color: #7dc2ef; }
+
+/* Align
+------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
+/* Layout
+------------------------------------------------------------*/
+.block-center, section .container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* Font
+------------------------------------------------------------*/
+.abel, section h2, #business h3 {
+  font-family: 'Abel', sans-serif; }
+
+.uppercase, section h2, #business h3 {
+  text-transform: uppercase; }
+
+/* Header
+------------------------------------------------------------*/
+.header-image {
+  background-image: url("/responsive-site/images/Yamasha17511030_TP_V.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+
+.button-contact {
+  width: 280px;
+  height: 20px;
+  padding: 10px;
+  border: 2px solid #4c4c4c;
+  color: #4c4c4c;
+  text-align: center;
+  display: block;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  font-size: 20px;
+  line-height: 1em;
+  margin-top: 2.0em;
+  margin-left: auto;
+  margin-right: auto; }
+  .button-contact:visited {
+    color: #4c4c4c; }
+
+/* Contents
+------------------------------------------------------------*/
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+  section h2 {
+    font-size: 3.2rem; }
+
+#business {
+  background-color: #e5ab47; }
+  #business .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+  #business h2 {
+    color: #fdfcf6;
+    margin-bottom: 60px; }
+  #business .business-box {
+    -webkit-flex: 1;
+    flex: 1;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #fdfcf6;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  #business h3 {
+    color: #66b7ec;
+    margin-bottom: 10px;
+    font-size: 2.4rem;
+    font-weight: bold; }
+
+#contact h2 {
+  color: #e5ab47;
+  margin-bottom: 60px; }
+
+@media (min-width: 768px) {
+  /* Header
+  ------------------------------------------------------------*/
+  .button-contact:hover, .button-contact:active {
+    background-color: #4c4c4c;
+    color: #FFF; }
+
+  #business .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #business .business-box {
+    margin: 0 10px; } }
+
+/*# sourceMappingURL=style.css.map */
